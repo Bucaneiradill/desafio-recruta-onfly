@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-friendgrid",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node to create contacts in SendGrid",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://n8n.io",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Test",
+    "email": "test@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/Bucaneiradill/desafio-recruta-onfly.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,15 +33,14 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/FriendGridApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/FriendGrid/FriendGrid.node.js"
     ]
   },
   "devDependencies": {
+    "@types/request": "^2.48.13",
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.3",
@@ -50,6 +49,11 @@
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
+    "n8n-core": "*",
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "n8n-core": "*",
+    "request": "^2.88.2"
   }
 }
