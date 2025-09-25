@@ -1,4 +1,4 @@
-Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, certifique-se de que você tem as seguintes ferramentas instaladas na sua máquina:
 
@@ -7,7 +7,7 @@ Antes de começar, certifique-se de que você tem as seguintes ferramentas insta
 * [Docker](https://www.docker.com/products/docker-desktop/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 
-Instalação e configuração
+## Instalação e configuração
 
 Clone o repositório `git clone [https://github.com/Bucaneiradill/desafio-recruta-onfly.git`
 
@@ -20,6 +20,8 @@ npm run build
 docker compose up -d
 ```
 
+## Configure o nó
+
 Acesse o n8n com a url **http://localhost:5678** preencha o formulário
 
 Crie um novo workflow em branco no simbolo de `+`
@@ -30,6 +32,8 @@ e mantenha ativo
 
 ![1758766965392](images/tutorial/1758766965392.png)
 
+## Execute o serviço!
+
 clique em execute workflow
 
 ![1758767012618](images/tutorial/1758767012618.png)
@@ -37,3 +41,5 @@ clique em execute workflow
 e use o link `http://localhost:5678/webhook-test/4acb9b09-5651-4ff1-ac32-f18084315c6c` em outra aba do navegador
 
 e pronto, seu número aleatório foi gerado!
+
+este botão de Execute workflow, deve ser ativado a cada requisição que realizar.
